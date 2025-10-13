@@ -2,8 +2,6 @@
 
 // 必要なアイコンだけをインポート
 import { Instagram, Twitter, Music2, MessageCircle } from "lucide-react"
-// Next.jsのImageコンポーネントは今のところ使わないので一旦コメントアウト
-// import Image from "next/image"
 
 // ヘッダーに表示するナビゲーションの項目
 const navItems = [
@@ -105,12 +103,12 @@ export default function HauruPortfolio() {
         </div>
       </section>
 
-      {/* ===== Footer ===== */}
+      {/* ===== Footer (お店情報) ===== */}
       <footer className="py-16 px-4 border-t border-gray-800">
         <div className="max-w-4xl mx-auto text-center space-y-8">
           <h3 className="text-3xl font-bold">MONSTAR -xeno-</h3>
           <div className="space-y-2 text-gray-400">
-            <p>大阪府大阪市中央区東心斎橋２丁目５−１１ リップル宗右衛門町 B1F</p>
+      _host       <p>大阪府大阪市中央区東心斎橋２丁目５−１１ リップル宗右衛門町 B1F</p>
             <p>TEL: 06-4256-4240</p>
             <p>営業時間: 20:00～LAST</p>
           </div>
