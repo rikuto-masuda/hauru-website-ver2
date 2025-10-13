@@ -1,12 +1,12 @@
-{/* ===== Profile Section (正しい画像パスに修正！) ===== */}
+{/* ===== Profile Section (ファイル名を最終修正！) ===== */}
       <section id="profile" className="min-h-screen py-20 px-4 fade-in-section">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 text-blue-400">PROFILE</h2>
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
-              {/* ここからの画像パスを全部直したよ！ */}
+              {/* メインの画像ファイル名を(1)付きに修正！ */}
               <img
-                src="/images/design-mode/LINE_ALBUM_20251003_251005_14.jpg"
+                src="/images/design-mode/LINE_ALBUM_20251003_251005_14(1).jpg"
                 alt="はうる"
                 className="w-full rounded-lg"
               />
@@ -43,7 +43,7 @@
               </div>
               <div className="border-l-2 border-blue-400 pl-6">
                 <p className="text-gray-400 mb-2">血液型</p>
-                <p className="text-2xl font-bold">A型</p>
+    _host              <p className="text-2xl font-bold">A型</p>
               </div>
               <div className="border-l-2 border-blue-400 pl-6">
                 <p className="text-gray-400 mb-2">趣味</p>
