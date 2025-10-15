@@ -22,7 +22,7 @@ export default function HauruPortfolio() {
       {/* ===== トップセクション (スマホ対応版) ===== */}
       <section id="top" className="relative flex flex-col items-center justify-center w-full h-screen bg-black text-white overflow-hidden">
         <header className="absolute top-0 left-0 right-0 z-10">
-          {/* レイアウトが崩れない、安定版の余白(px-4)に戻すよ */}
+          {/* 安定版の余白(px-4) */}
           <div className="container mx-auto flex justify-between items-center px-4 py-4">
             {/* 左上の"ALL GROUP" */}
             <div className="flex items-center space-x-4">
@@ -64,7 +64,7 @@ export default function HauruPortfolio() {
                     key={item}
                     href={`#${item.toLowerCase()}`}
                     className="text-2xl tracking-wider uppercase"
-                    onClick={() => setIsMenuOpen(false)} // リンクをクリックしたらメニューを閉じる
+                    onClick={() => setIsMenuOpen(false)}
                   >
                     {item}
                   </a>
@@ -84,6 +84,7 @@ export default function HauruPortfolio() {
       <section id="profile" className="py-24 px-4">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 text-blue-400">PROFILE</h2>
+          {/* ★★★ここがPCで2列にするための魔法の言葉！★★★ */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
             {/* === 左カラム (写真全部) === */}
             <div className="space-y-6">
