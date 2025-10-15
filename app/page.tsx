@@ -16,30 +16,32 @@ export default function HauruPortfolio() {
   return (
     <div className="min-h-screen bg-black text-white overflow-x-hidden">
       {/* ===== トップセクション (新デザイン) ===== */}
+      {/* ===== トップセクション (スマホ対応版) ===== */}
       <section id="top" className="relative flex flex-col items-center justify-center w-full h-screen bg-black text-white overflow-hidden">
-        <header className="absolute top-0 left-0 right-0 z-10">
-          <div className="container mx-auto flex justify-between items-center px-6 py-4">
-            <div className="flex items-center space-x-4">
-              <p className="text-xl font-bold tracking-widest">ALL GROUP</p>
-            </div>
-            <nav className="hidden md:flex items-center space-x-8">
-              {navItems.map((item) => (
-                <a key={item} href={`#${item.toLowerCase()}`} className="text-sm tracking-wider uppercase hover:text-blue-400 transition-colors">
-                  {item}
-                </a>
-              ))}
-            </nav>
-            <div className="hidden md:flex items-center space-x-4">
-              <a href="https://www.instagram.com/showtime_howl?igsh=MTdsOG8xZTVpYXI5Yg%3D%3D&utm_source=qr" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition-colors"><Instagram size={20} /></a>
-              <a href="#" className="hover:text-blue-400 transition-colors"><Twitter size={20} /></a>
-            </div>
-          </div>
-        </header>
-        <div className="z-0 flex flex-col items-center text-center">
-          <div className="font-serif text-8xl transform -rotate-12">///</div>
-          <h1 className="font-serif text-8xl tracking-[0.5em] mt-4">MONSTAR</h1>
-        </div>
-      </section>
+        <header className="absolute top-0 left-0 right-0 z-10">
+          <div className="container mx-auto flex justify-between items-center px-6 py-4">
+            <div className="flex items-center space-x-4">
+              <p className="text-xl font-bold tracking-widest">ALL GROUP</p>
+            </div>
+            <nav className="hidden md:flex items-center space-x-8">
+              {navItems.map((item) => (
+                <a key={item} href={`#${item.toLowerCase()}`} className="text-sm tracking-wider uppercase hover:text-blue-400 transition-colors">
+                  {item}
+                </a>
+              ))}
+            </nav>
+            <div className="hidden md:flex items-center space-x-4">
+              <a href="https://www.instagram.com/showtime_howl?igsh=MTdsOG8xZTVpYXI5Yg%3D%3D&utm_source=qr" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition-colors"><Instagram size={20} /></a>
+              <a href="#" className="hover:text-blue-400 transition-colors"><Twitter size={20} /></a>
+            </div>
+          </div>
+        </header>
+        {/* ↓↓↓ ここの文字サイズ指定を賢くしたよ！ ↓↓↓ */}
+        <div className="z-0 flex flex-col items-center text-center px-4">
+          <div className="font-serif text-6xl md:text-8xl transform -rotate-12">///</div>
+          <h1 className="font-serif text-6xl md:text-8xl tracking-widest md:tracking-[0.5em] mt-4">MONSTAR</h1>
+        </div>
+      </section>
 
       {/* ===== Profile Section (レイアウト修正 & 青色統一 & 誕生日更新) ===== */}
       <section id="profile" className="py-24 px-4">
