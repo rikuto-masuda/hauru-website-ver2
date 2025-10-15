@@ -22,7 +22,8 @@ export default function HauruPortfolio() {
       {/* ===== トップセクション (スマホ対応版) ===== */}
       <section id="top" className="relative flex flex-col items-center justify-center w-full h-screen bg-black text-white overflow-hidden">
         <header className="absolute top-0 left-0 right-0 z-10">
-          <div className="container mx-auto flex justify-between items-center px-6 py-4">
+          {/* ↓↓↓ ここの px-6 を px-4 に変更したよ！ ↓↓↓ */}
+          <div className="container mx-auto flex justify-between items-center px-4 py-4">
             {/* 左上の"ALL GROUP" */}
             <div className="flex items-center space-x-4">
               <p className="text-xl font-bold tracking-widest">ALL GROUP</p>
@@ -54,7 +55,7 @@ export default function HauruPortfolio() {
           {/* ===== スマホ用のメニュー画面 (開閉スイッチがONの時だけ表示) ===== */}
           {isMenuOpen && (
             <div className="md:hidden absolute top-0 left-0 w-full h-screen bg-black bg-opacity-95 flex flex-col items-center justify-center">
-              <button onClick={() => setIsMenuOpen(false)} className="absolute top-6 right-6">
+              <button onClick={() => setIsMenuOpen(false)} className="absolute top-6 right-4">
                 <X className="w-8 h-8" />
               </button>
               <nav className="flex flex-col items-center space-y-8">
@@ -110,7 +111,7 @@ export default function HauruPortfolio() {
         <div className="max-w-4xl mx-auto">
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 text-blue-400">Q&A</h2>
           <div className="space-y-8">
-            {[ { q: "ホストを始めたきっかけは？", a: "人と話すことが好きで、お客様を笑顔にできる仕事がしたいと思ったからです。" }, { q: "得意なことは何ですか？", a: "お客様の話をじっくり聞いて、楽しい時間を作ることです。" }, { q: "好きな食べ物は？", a: "焼肉とお寿司が大好きです！" }, { q: "お客様へのメッセージ", a: "いつも応援ありがとうございます。一緒に楽しい時間を過ごしましょう！" }, ].map((item, index) => (
+  _host         {[ { q: "ホストを始めたきっかけは？", a: "人と話すことが好きで、お客様を笑顔にできる仕事がしたいと思ったからです。" }, { q: "得意なことは何ですか？", a: "お客様の話をじっくり聞いて、楽しい時間を作ることです。" }, { q: "好きな食べ物は？", a: "焼肉とお寿司が大好きです！" }, { q: "お客様へのメッセージ", a: "いつも応援ありがとうございます。一緒に楽しい時間を過ごしましょう！" }, ].map((item, index) => (
               <div key={index} className="border-l-2 border-blue-400 pl-6 py-4"><p className="text-blue-400 font-bold text-xl mb-3">Q. {item.q}</p><p className="text-white text-lg pl-4">A. {item.a}</p></div>
             ))}
           </div>
