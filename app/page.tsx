@@ -159,4 +159,8 @@ export default function HauruPortfolio() {
       </footer>
     </div>
   )
+
 }
+
+}
+
