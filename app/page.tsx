@@ -107,7 +107,7 @@ export default function HauruPortfolio() {
         </div>
       </section>
 
-      {/* ... (Q&A以下のセクションは変更なし) ... */}
+      {/* ... (Q&A以下のセクションも変更なし) ... */}
 
     </div>
   )
