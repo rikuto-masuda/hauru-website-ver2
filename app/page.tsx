@@ -62,7 +62,7 @@ export default function HauruPortfolio() {
               <div className="border-l-4 border-blue-400 pl-6"><p className="text-gray-400 mb-1 text-sm">名前</p><p className="text-2xl font-bold">はうる</p></div>
               <div className="border-l-4 border-blue-400 pl-6"><p className="text-gray-400 mb-1 text-sm">所属</p><p className="text-2xl font-bold">MONSTAR -xeno-</p></div>
               <div className="border-l-4 border-blue-400 pl-6"><p className="text-gray-400 mb-1 text-sm">誕生日</p><p className="text-2xl font-bold">8月21日</p></div>
-              <div className="border-l-4 border-blue-400 pl-6"><p className="text-gray-400 mb-1 text-sm">血液型</p><p className="text-2xl font-bold">A型</p></div>
+              <div className="border-l-4 border-blue-400 pl-6"><p className="text-gray-400 mb-1 text-sm">血液型</p><p className="text-2xl font-bold">B型</p></div>
               <div className="border-l-4 border-blue-400 pl-6"><p className="text-gray-400 mb-1 text-sm">趣味</p><p className="text-2xl font-bold">音楽鑑賞、ゲーム</p></div>
             </div>
           </div>
@@ -110,8 +110,8 @@ export default function HauruPortfolio() {
         <div className="max-w-4xl mx-auto text-center space-y-8">
           <h3 className="text-3xl font-bold">MONSTAR -xeno-</h3>
           <div className="space-y-2 text-gray-400">
-      _host       <p>大阪府大阪市中央区東心斎橋２丁目５−１１ リップル宗右衛門町 B1F</p>
-            <p>TEL: 06-4256-4240</p>
+      _host       <p>大阪府大阪市中央区東心斎橋２丁目６−１３ 日宝ナイトビル 4F</p>
+            <p>TEL: 06-6575-7097</p>
             <p>営業時間: 20:00～LAST</p>
           </div>
           <div className="pt-8 text-sm text-gray-600">
